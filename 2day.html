@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+<script>
+let book = {
+   
+    author: 'paulo Coelho',
+    title:'The Alchemist',
+    year: 1988,
+
+   
+ getSummary: function() {
+    return 'The book "' + this.title + '" was written by ' + this.author + ' in ' + this.year + '.';
+  }
+};
+
+
+
+
+
+function printBookSummary(bookObj) {
+	document.write(bookObj.getSummary());
+}
+printBookSummary(book);
+
+
+</script>
+
+</body>
+</html>
